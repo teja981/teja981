@@ -1,0 +1,35 @@
+name: Generate Snake Animation
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # once a day
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate snake SVGs
+        uses: Platane/snk@v3
+        with:
+          github_user_name: teja981
+          outputs: |
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
+          # custom pink/purple palette to match the banner theme
+          # (edit these hex values any time you like)
+          color_snake: "#f472b6"
+          color_dots: "#241a44,#3f2d6b,#7c3aed,#a78bfa,#f472b6"
+
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
