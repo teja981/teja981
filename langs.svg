@@ -1,0 +1,39 @@
+<svg width="420" height="230" viewBox="0 0 420 230" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: ui-monospace, 'Courier New', monospace; }
+      .card { fill: #0d0b1e; stroke: #3f2d6b; }
+      .bar { animation: grow 1.4s ease-out forwards; transform: scaleX(0); }
+      @keyframes grow { to { transform: scaleX(1); } }
+      .fadeIn { opacity: 0; animation: fadeIn 0.6s ease-out forwards; }
+      @keyframes fadeIn { to { opacity: 1; } }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="418" height="228" rx="16" class="card"/>
+  <text x="24" y="34" font-size="16" font-weight="700" fill="#f0abfc">Top Languages</text>
+
+  <!-- edit widths/percentages to match your real repo mix -->
+  <g transform="translate(24,56)" font-size="13">
+    <g class="fadeIn" style="animation-delay:0.1s">
+      <text x="0" y="0" fill="#f9a8d4">Python</text><text x="360" y="0" text-anchor="end" fill="#f9a8d4">40%</text>
+      <rect x="0" y="8" width="372" height="8" rx="4" fill="#241a44"/>
+      <rect x="0" y="8" width="372" height="8" rx="4" fill="#3776AB" class="bar" style="transform-origin:0 12px;animation-delay:0.3s"/>
+    </g>
+    <g class="fadeIn" style="animation-delay:0.3s" transform="translate(0,36)">
+      <text x="0" y="0" fill="#7dd3fc">JavaScript / TypeScript</text><text x="360" y="0" text-anchor="end" fill="#7dd3fc">28%</text>
+      <rect x="0" y="8" width="372" height="8" rx="4" fill="#241a44"/>
+      <rect x="0" y="8" width="260" height="8" rx="4" fill="#F7DF1E" class="bar" style="transform-origin:0 12px;animation-delay:0.5s"/>
+    </g>
+    <g class="fadeIn" style="animation-delay:0.5s" transform="translate(0,72)">
+      <text x="0" y="0" fill="#c4b5fd">HTML / CSS</text><text x="360" y="0" text-anchor="end" fill="#c4b5fd">18%</text>
+      <rect x="0" y="8" width="372" height="8" rx="4" fill="#241a44"/>
+      <rect x="0" y="8" width="167" height="8" rx="4" fill="#E44D26" class="bar" style="transform-origin:0 12px;animation-delay:0.7s"/>
+    </g>
+    <g class="fadeIn" style="animation-delay:0.7s" transform="translate(0,108)">
+      <text x="0" y="0" fill="#fca5a5">Java</text><text x="360" y="0" text-anchor="end" fill="#fca5a5">14%</text>
+      <rect x="0" y="8" width="372" height="8" rx="4" fill="#241a44"/>
+      <rect x="0" y="8" width="130" height="8" rx="4" fill="#B07219" class="bar" style="transform-origin:0 12px;animation-delay:0.9s"/>
+    </g>
+  </g>
+</svg>
