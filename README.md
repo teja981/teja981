@@ -25,7 +25,7 @@
 |---|---|---|
 | [Smart Attendance System](https://github.com/teja981/smart-attendance-system) | `Django` `OpenCV` `Dlib` | Automated attendance via face recognition |
 | [AI Fitness Tracker](https://github.com/teja981/AI-FITNESS-TRACKER) | `Pandas` `Scikit-learn` | ML-driven fitness insights |
-  PORTIFILO WEBSITE: [portifilo-two-zeta.vercel.app](https://portifilo-two-zeta.vercel.app/)
+   PORTIFILO WEBSITE: [portifilo-two-zeta.vercel.app](https://portifilo-two-zeta.vercel.app/)
 
 ### 💗 About Me
 >_ B.Tech in Computer Science & AI @ Amrita Vishwa Vidyapeetham (2023–2027)
